@@ -55,7 +55,7 @@ namespace Master_floor
                 && PartType.SelectedValue != null
                 && Director.Text != ""
                 && Adress.Text != ""
-                && int.TryParse(Rating.Text, out var result))
+                && int.TryParse(Rating.Text, out var result) && result >= 0)
             {
                 try
                 {
@@ -94,7 +94,7 @@ namespace Master_floor
                 && PartType.SelectedValue != null
                 && Director.Text != ""
                 && Adress.Text != ""
-                && int.TryParse(Rating.Text, out var result))
+                && int.TryParse(Rating.Text, out var result) && result >= 0)
             {
                 try
                 {
@@ -141,7 +141,7 @@ namespace Master_floor
 
         private void History_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new HistoryPage(partner));
         }
     }
 }

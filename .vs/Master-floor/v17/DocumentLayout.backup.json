@@ -3,48 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|C:\\Users\\Nameless\\source\\repos\\Master-floor\\master-floor\\partnerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\partnerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|c:\\users\\nameless\\source\\repos\\master-floor\\master-floor\\materialspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\materialspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|C:\\Users\\Nameless\\source\\repos\\Master-floor\\master-floor\\partnerspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\partnerspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|c:\\users\\nameless\\source\\repos\\master-floor\\master-floor\\materials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\materials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|C:\\Users\\Nameless\\source\\repos\\Master-floor\\master-floor\\partners.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\partners.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|c:\\users\\nameless\\source\\repos\\master-floor\\master-floor\\materialspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\materialspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|c:\\users\\nameless\\source\\repos\\master-floor\\master-floor\\partnerinfopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\partnerinfopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|c:\\users\\nameless\\source\\repos\\master-floor\\master-floor\\partnersdiscountmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\partnersdiscountmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|c:\\users\\nameless\\source\\repos\\master-floor\\master-floor\\partnerinfopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\partnerinfopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|c:\\users\\nameless\\source\\repos\\master-floor\\master-floor\\prodtypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\prodtypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|C:\\Users\\Nameless\\source\\repos\\Master-floor\\master-floor\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|c:\\users\\nameless\\source\\repos\\master-floor\\master-floor\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|C:\\Users\\Nameless\\source\\repos\\Master-floor\\master-floor\\partnerinfopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\partnerinfopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|C:\\Users\\Nameless\\source\\repos\\Master-floor\\master-floor\\partner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\partner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|C:\\Users\\Nameless\\source\\repos\\Master-floor\\master-floor\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|C:\\Users\\Nameless\\source\\repos\\Master-floor\\master-floor\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E311D173-9D27-4930-A91D-DE5E876342C1}|Master-floor\\Master-floor.csproj|solutionrelative:master-floor\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\App.xaml",
               "RelativeDocumentMoniker": "Master-floor\\App.xaml",
@@ -71,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Model1.Context.cs",
               "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\Model1.Context.cs",
               "RelativeDocumentMoniker": "Master-floor\\Model1.Context.cs",
               "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\Model1.Context.cs",
               "RelativeToolTip": "Master-floor\\Model1.Context.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwBwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T19:40:59.407Z",
               "IsPinned": true,
@@ -85,28 +73,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Partners.cs",
-              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\Partners.cs",
-              "RelativeDocumentMoniker": "Master-floor\\Partners.cs",
-              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\Partners.cs*",
-              "RelativeToolTip": "Master-floor\\Partners.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Materials.cs",
+              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\Materials.cs",
+              "RelativeDocumentMoniker": "Master-floor\\Materials.cs",
+              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\Materials.cs",
+              "RelativeToolTip": "Master-floor\\Materials.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T06:34:53.018Z",
+              "WhenOpened": "2024-12-23T17:18:44.599Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PartnersDiscountMethod.cs",
-              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\PartnersDiscountMethod.cs",
-              "RelativeDocumentMoniker": "Master-floor\\PartnersDiscountMethod.cs",
-              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\PartnersDiscountMethod.cs",
-              "RelativeToolTip": "Master-floor\\PartnersDiscountMethod.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T11:21:20.183Z",
+              "Title": "PartnerInfoPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\PartnerInfoPage.xaml",
+              "RelativeDocumentMoniker": "Master-floor\\PartnerInfoPage.xaml",
+              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\PartnerInfoPage.xaml",
+              "RelativeToolTip": "Master-floor\\PartnerInfoPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-23T16:33:43.208Z",
               "EditorCaption": ""
             },
             {
@@ -117,83 +104,48 @@
               "RelativeDocumentMoniker": "Master-floor\\PartnerInfoPage.xaml.cs",
               "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\PartnerInfoPage.xaml.cs",
               "RelativeToolTip": "Master-floor\\PartnerInfoPage.xaml.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAqwIEAAABkAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwDkAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T04:55:17.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PartnersPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\PartnersPage.xaml",
-              "RelativeDocumentMoniker": "Master-floor\\PartnersPage.xaml",
-              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\PartnersPage.xaml",
-              "RelativeToolTip": "Master-floor\\PartnersPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-20T04:53:53.56Z",
+              "WhenOpened": "2024-12-23T16:33:41.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PartnersPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\PartnersPage.xaml.cs",
-              "RelativeDocumentMoniker": "Master-floor\\PartnersPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\PartnersPage.xaml.cs",
-              "RelativeToolTip": "Master-floor\\PartnersPage.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwCEAAAAmAAAAAAAAAA==",
+              "Title": "MaterialsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\MaterialsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Master-floor\\MaterialsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\MaterialsPage.xaml.cs",
+              "RelativeToolTip": "Master-floor\\MaterialsPage.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T09:16:23.059Z",
+              "WhenOpened": "2024-12-23T16:15:32.666Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HistoryPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\HistoryPage.xaml",
-              "RelativeDocumentMoniker": "Master-floor\\HistoryPage.xaml",
-              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\HistoryPage.xaml",
-              "RelativeToolTip": "Master-floor\\HistoryPage.xaml",
+              "DocumentIndex": 2,
+              "Title": "MaterialsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\MaterialsPage.xaml",
+              "RelativeDocumentMoniker": "Master-floor\\MaterialsPage.xaml",
+              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\MaterialsPage.xaml",
+              "RelativeToolTip": "Master-floor\\MaterialsPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-23T10:22:48.916Z",
+              "WhenOpened": "2024-12-23T15:45:57.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PartnerInfoPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\PartnerInfoPage.xaml",
-              "RelativeDocumentMoniker": "Master-floor\\PartnerInfoPage.xaml",
-              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\PartnerInfoPage.xaml",
-              "RelativeToolTip": "Master-floor\\PartnerInfoPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-20T04:48:29.357Z",
+              "DocumentIndex": 5,
+              "Title": "ProdTypes.cs",
+              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\ProdTypes.cs",
+              "RelativeDocumentMoniker": "Master-floor\\ProdTypes.cs",
+              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\ProdTypes.cs",
+              "RelativeToolTip": "Master-floor\\ProdTypes.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T16:32:29.645Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Partner.cs",
-              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\Partner.cs",
-              "RelativeDocumentMoniker": "Master-floor\\Partner.cs",
-              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\Partner.cs",
-              "RelativeToolTip": "Master-floor\\Partner.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T05:21:22.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Master-floor\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Nameless\\source\\repos\\Master-floor\\Master-floor\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Master-floor\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:17:35.008Z"
             }
           ]
         }

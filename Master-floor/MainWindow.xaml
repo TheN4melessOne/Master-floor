@@ -5,17 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Master_floor"
         mc:Ignorable="d"
-        Title="Мастер пол" Height="450" Width="800">
+        Title="Мастер пол" Height="450" Width="800"
+        FontFamily="Segoe UI">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto" ></ColumnDefinition>
-            <ColumnDefinition Width="*" ></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-
-        <StackPanel Grid.Column="0" Margin="10 10 0 0">
-            <Button Content="Партнеры" x:Name="PartnersButton" Click="PartnersButton_Click"></Button>
-            <Button Content="Материалы"></Button>
-        </StackPanel>
         <Frame x:Name="MainFrame" Grid.Column="1" Margin="10 10 10 10"></Frame>
     </Grid>
 </Window>

@@ -27,3 +27,7 @@ C:\Users\Nameless\source\repos\Master-floor\Master-floor\obj\Debug\PartnerInfoPa
 C:\Users\Nameless\source\repos\Master-floor\Master-floor\obj\Debug\PartnerInfoPage.baml
 C:\Users\Nameless\source\repos\Master-floor\Master-floor\obj\Debug\HistoryPage.g.cs
 C:\Users\Nameless\source\repos\Master-floor\Master-floor\obj\Debug\HistoryPage.baml
+C:\Users\Nameless\source\repos\Master-floor\Master-floor\obj\Debug\StartPage.g.cs
+C:\Users\Nameless\source\repos\Master-floor\Master-floor\obj\Debug\StartPage.baml
+C:\Users\Nameless\source\repos\Master-floor\Master-floor\obj\Debug\MaterialsPage.g.cs
+C:\Users\Nameless\source\repos\Master-floor\Master-floor\obj\Debug\MaterialsPage.baml

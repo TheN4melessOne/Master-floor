@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
-using System.Data.Entity;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -17,19 +15,21 @@ using System.Windows.Shapes;
 
 namespace Master_floor
 {
-    public partial class HistoryPage : Page
+    public partial class StartPage : Page
     {
-        Entities Context;
-        public HistoryPage(Partners partner)
+        public StartPage()
         {
             InitializeComponent();
-            Context = new Entities();
-            ObservableCollection<Sales> history = new ObservableCollection<Sales>(partner.Sales);
-            foreach (Sales sale in history) 
-            {
-                sale.GetDate();
-            }
-            HistoryGrid.ItemsSource = history;
+        }
+
+        private void PartnersButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PartnersPage());
+        }
+
+        private void MaterialsButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MaterialsPage());
         }
     }
 }

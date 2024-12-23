@@ -1,0 +1,114 @@
+USE demoexam1;
+
+CREATE TABLE ProdTypes
+(id int PRIMARY KEY IDENTITY,
+typeName varchar(max),
+coeff decimal(30, 2));
+
+CREATE TABLE Products
+(id int PRIMARY KEY IDENTITY,
+prodName varchar(max),
+typeId int,
+art int,
+minPrice decimal(30, 2),
+CONSTRAINT FK_Products_Types FOREIGN KEY (typeId) REFERENCES prodTypes (id) );
+
+CREATE TABLE PartTypes
+(id int PRIMARY KEY IDENTITY,
+typeName varchar(max));
+
+CREATE TABLE Partners
+(id int PRIMARY KEY IDENTITY,
+partName varchar(max),
+typeId int,
+director varchar(max),
+phoneNum varchar(max),
+email varchar(max),
+partAddress varchar(max),
+rating int,
+INN varchar(max),
+CONSTRAINT FK_Partner_Types FOREIGN KEY (typeId) REFERENCES PartTypes (id));
+
+CREATE TABLE Materials
+(id int PRIMARY KEY IDENTITY,
+matName varchar(max),
+defectPercent decimal(30, 2)
+);
+
+CREATE TABLE Sales
+(id int PRIMARY KEY IDENTITY,
+prodId int,
+partId int,
+amount int,
+saleDate date,
+CONSTRAINT FK_Sales_Products FOREIGN KEY (prodId) REFERENCES Products (id),
+CONSTRAINT FK_Sales_Partners FOREIGN KEY (partId) REFERENCES Partners (id));
+
+INSERT INTO ProdTypes
+VALUES
+('Ламинат', 2.35),
+('Массивная доска', 5.15),
+('Паркетная доска', 4.34),
+('Пробковое покрытие', 1.5);
+
+INSERT INTO Products
+VALUES
+('Паркетная доска Ясень темный однополосная 14 мм', 3, 8758385, 4456.90),
+('Инженерная доска Дуб Французская елка однополосная 12 мм', 3, 8858958, 7330.99),
+('Ламинат Дуб дымчато-белый 33 класс 12 мм', 1, 7750282, 1799.33),
+('Ламинат Дуб серый 32 класс 8 мм с фаской', 1, 7028748, 3890.41),
+('Пробковое напольное клеевое покрытие 32 класс 4 мм', 4, 5012543, 5450.59);
+
+INSERT INTO PartTypes
+VALUES
+('ЗАО'),
+('ООО'),
+('ПАО'),
+('ОАО');
+
+ALTER TABLE Partners
+ADD email varchar(max);
+
+ALTER TABLE Partners
+ALTER COLUMN INN NVARCHAR(200);
+
+INSERT INTO Partners
+(partName, typeId, director, phoneNum, email, partAddress, rating, INN)
+VALUES
+('База Строитель', 1, 'Иванова Александра Ивановна', '493 123 45 67', 'aleksandraivanova@ml.ru', '652050, Кемеровская область, город Юрга, ул. Лесная, 15', 7, 2222455179),
+('Паркет 29', 2, 'Петров Василий Петрович', '987 123 56 78', 'vppetrov@vl.ru', '164500, Архангельская область, город Северодвинск, ул. Строителей, 18', 7, 3333888520),
+('Стройсервис', 3, 'Соловьев Андрей Николаевич', '812 223 32 00', 'ansolovev@st.ru', '188910, Ленинградская область, город Приморск, ул. Парковая, 21', 7, 4440391035),
+('Ремонт и отделка', 4, 'Воробьева Екатерина Валерьевна', '444 222 33 11', 'ekaterina.vorobeva@ml.ru', '143960, Московская область, город Реутов, ул. Свободы, 51', 5, 1111520857),
+('МонтажПро', 1, 'Степанов Степан Сергеевич', '912 888 33 33', 'stepanov@stepan.ru', '309500, Белгородская область, город Старый Оскол, ул. Рабочая, 122', 10, 5552431140);
+
+INSERT INTO Materials
+VALUES
+('Тип материала 1', 0.1),
+('Тип материала 2', 0.95),
+('Тип материала 3', 0.28),
+('Тип материала 4', 0.55),
+('Тип материала 5', 0.34);
+
+SET LANGUAGE british;
+
+INSERT INTO Sales
+(prodId, partId, amount, saleDate)
+VALUES
+(1, 2, 15500, '23.03.2023'),
+(3, 2, 12350, '18.12.2023'),
+(4, 2, 37400, '07.06.2024'),
+(2, 3, 35000, '02.12.2022'),
+(5, 3, 1250, '17.05.2023'),
+(3, 3, 1000, '07.06.2024'),
+(1, 3, 7550, '01.07.2024'),
+(1, 4, 7250, '22.01.2023'),
+(2, 4, 2500, '05.07.2024'),
+(4, 5, 59050, '20.03.2023'),
+(3, 5, 37200, '12.03.2024'),
+(5, 5, 4500, '14.05.2024'),
+(3, 6, 50000, '19.09.2023'),
+(4, 6, 670000, '10.11.2023'),
+(1, 6, 35000, '15.04.2024'),
+(2, 6, 25000, '12.06.2024');
+
+создать скрипт:https://www.c-sharpcorner.com/article/create-database-script-with-table-data-in-sql-server/

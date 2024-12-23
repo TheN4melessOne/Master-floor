@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Master_floor"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PartnersPage">
+      Title="PartnersPage" FontFamily="Segoe UI">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -18,7 +18,7 @@
         <ListBox HorizontalContentAlignment="Stretch" Grid.Row="1" x:Name="PartnerList" SelectionMode="Single" SelectionChanged="PartnerList_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Grid>
+                    <Grid Background="#F4E8D3">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition></ColumnDefinition>
                             <ColumnDefinition></ColumnDefinition>

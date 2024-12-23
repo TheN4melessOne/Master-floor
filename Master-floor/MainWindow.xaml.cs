@@ -23,10 +23,7 @@ namespace Master_floor
         public MainWindow()
         {
             InitializeComponent();
-        }
-        private void PartnersButton_Click(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Source = new Uri("PartnersPage.xaml", UriKind.Relative);
+            MainFrame.Source = new Uri("StartPage.xaml", UriKind.Relative);
         }
     }
 }

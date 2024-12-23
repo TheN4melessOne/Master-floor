@@ -29,16 +29,12 @@ namespace Master_floor
             InitializeComponent();
             Context = new Entities();
 
-            Partners = new ObservableCollection<Partners>(Context.Partners
-                .Include(p => p.PartTypes)
-                .Include(p => p.Sales)
-                .ToList());
+            Partners = new ObservableCollection<Partners>(Context.Partners.ToList());
             foreach (Partners partner in Partners) 
             {
                 partner.Discount();
             }
             PartnerList.ItemsSource = Partners;
-            MessageBox.Show( $"{Partners.First().discount}");
         }
 
         private void PartnerInfo_Click(object sender, RoutedEventArgs e)
