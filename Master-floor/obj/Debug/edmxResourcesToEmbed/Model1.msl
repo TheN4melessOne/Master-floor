@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище MasterModelContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Materials">
+      <EntityTypeMapping TypeName="MasterModel.Materials">
+        <MappingFragment StoreEntitySet="Materials">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="matName" ColumnName="matName" />
+          <ScalarProperty Name="defectPercent" ColumnName="defectPercent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partners">
+      <EntityTypeMapping TypeName="MasterModel.Partners">
+        <MappingFragment StoreEntitySet="Partners">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="partName" ColumnName="partName" />
+          <ScalarProperty Name="typeId" ColumnName="typeId" />
+          <ScalarProperty Name="director" ColumnName="director" />
+          <ScalarProperty Name="phoneNum" ColumnName="phoneNum" />
+          <ScalarProperty Name="partAddress" ColumnName="partAddress" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartTypes">
+      <EntityTypeMapping TypeName="MasterModel.PartTypes">
+        <MappingFragment StoreEntitySet="PartTypes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="typeName" ColumnName="typeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProdTypes">
+      <EntityTypeMapping TypeName="MasterModel.ProdTypes">
+        <MappingFragment StoreEntitySet="ProdTypes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="typeName" ColumnName="typeName" />
+          <ScalarProperty Name="coeff" ColumnName="coeff" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="MasterModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="prodName" ColumnName="prodName" />
+          <ScalarProperty Name="typeId" ColumnName="typeId" />
+          <ScalarProperty Name="art" ColumnName="art" />
+          <ScalarProperty Name="minPrice" ColumnName="minPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="MasterModel.Sales">
+        <MappingFragment StoreEntitySet="Sales">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="prodId" ColumnName="prodId" />
+          <ScalarProperty Name="partId" ColumnName="partId" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="saleDate" ColumnName="saleDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

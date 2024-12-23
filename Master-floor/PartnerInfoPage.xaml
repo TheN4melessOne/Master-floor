@@ -1,0 +1,79 @@
+﻿<Page x:Class="Master_floor.PartnerInfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Master_floor"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PartnerInfoPage">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="5 5 5 5"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5 5 5 5"></Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Text="ИНФОРМАЦИЯ О ПАРТНЕРЕ" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <Button x:Name="History" Click="History_Click" Content="История" HorizontalAlignment="Right"></Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Column="0" Grid.Row="0">
+                <TextBlock Text="Наименование" ></TextBlock>
+                <TextBox x:Name="Name" Text="{Binding partName}"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Column="0" Grid.Row="1">
+                <TextBlock Text="ИНН"></TextBlock>
+                <TextBox x:Name="INN" Text="{Binding INN}"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Column="0" Grid.Row="2">
+                <TextBlock Text="Email"></TextBlock>
+                <TextBox x:Name="Email" Text="{Binding email}"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Column="0" Grid.Row="3">
+                <TextBlock Text="Телефон"></TextBlock>
+                <TextBox x:Name="Phone" Text="{Binding phoneNum}"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="0">
+                <TextBlock Text="Тип"></TextBlock>
+                <ComboBox x:Name="PartType" SelectedItem="{Binding PartTypes}"></ComboBox>
+                <!--SelectedItem="{Binding PartTypes.typeName}"-->
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="1">
+                <TextBlock Text="ФИО Директора"></TextBlock>
+                <TextBox x:Name="Director" Text="{Binding director}"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="2">
+                <TextBlock Text="Рейтинг"></TextBlock>
+                <TextBox x:Name="Rating" Text="{Binding rating}"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="3">
+                <TextBlock Text="Адрес"></TextBlock>
+                <TextBox x:Name="Adress" Text="{Binding partAddress}"></TextBox>
+            </StackPanel>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center">
+            <Button x:Name="Create" Content="Создать" Click="Create_Click"></Button>
+            <Button x:Name="Save" Content="Сохранить" Click="Save_Click"></Button>
+            <Button x:Name="Delete" Content="Удалить" Click="Delete_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Page>

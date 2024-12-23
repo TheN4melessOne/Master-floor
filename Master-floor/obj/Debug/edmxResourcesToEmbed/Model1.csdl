@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MasterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Materials">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="matName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="defectPercent" Type="Decimal" Precision="30" Scale="2" />
+  </EntityType>
+  <EntityType Name="Partners">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="partName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="typeId" Type="Int32" />
+    <Property Name="director" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="phoneNum" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="partAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="rating" Type="Int32" />
+    <Property Name="INN" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PartTypes" Relationship="Self.FK_Partner_Types" FromRole="Partners" ToRole="PartTypes" />
+    <NavigationProperty Name="Sales" Relationship="Self.FK_Sales_Partners" FromRole="Partners" ToRole="Sales" />
+  </EntityType>
+  <EntityType Name="PartTypes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="typeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Partners" Relationship="Self.FK_Partner_Types" FromRole="PartTypes" ToRole="Partners" />
+  </EntityType>
+  <EntityType Name="ProdTypes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="typeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="coeff" Type="Decimal" Precision="30" Scale="2" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Products_Types" FromRole="ProdTypes" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prodName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="typeId" Type="Int32" />
+    <Property Name="art" Type="Int32" />
+    <Property Name="minPrice" Type="Decimal" Precision="30" Scale="2" />
+    <NavigationProperty Name="ProdTypes" Relationship="Self.FK_Products_Types" FromRole="Products" ToRole="ProdTypes" />
+    <NavigationProperty Name="Sales" Relationship="Self.FK_Sales_Products" FromRole="Products" ToRole="Sales" />
+  </EntityType>
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prodId" Type="Int32" />
+    <Property Name="partId" Type="Int32" />
+    <Property Name="amount" Type="Int32" />
+    <Property Name="saleDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Partners" Relationship="Self.FK_Sales_Partners" FromRole="Sales" ToRole="Partners" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Sales_Products" FromRole="Sales" ToRole="Products" />
+  </EntityType>
+  <Association Name="FK_Partner_Types">
+    <End Role="PartTypes" Type="Self.PartTypes" Multiplicity="0..1" />
+    <End Role="Partners" Type="Self.Partners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Partners">
+        <PropertyRef Name="typeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_Partners">
+    <End Role="Partners" Type="Self.Partners" Multiplicity="0..1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Partners">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="partId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Types">
+    <End Role="ProdTypes" Type="Self.ProdTypes" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProdTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="typeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="prodId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Materials" EntityType="Self.Materials" />
+    <EntitySet Name="Partners" EntityType="Self.Partners" />
+    <EntitySet Name="PartTypes" EntityType="Self.PartTypes" />
+    <EntitySet Name="ProdTypes" EntityType="Self.ProdTypes" />
+    <EntitySet Name="Products" EntityType="Self.Products" />
+    <EntitySet Name="Sales" EntityType="Self.Sales" />
+    <AssociationSet Name="FK_Partner_Types" Association="Self.FK_Partner_Types">
+      <End Role="PartTypes" EntitySet="PartTypes" />
+      <End Role="Partners" EntitySet="Partners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_Partners" Association="Self.FK_Sales_Partners">
+      <End Role="Partners" EntitySet="Partners" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Types" Association="Self.FK_Products_Types">
+      <End Role="ProdTypes" EntitySet="ProdTypes" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_Products" Association="Self.FK_Sales_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

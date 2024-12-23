@@ -11,15 +11,40 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Text="СПИСОК ПАРТНЕРОВ" HorizontalAlignment="Center"></TextBlock>
-        <ListBox Grid.Row="1" x:Name="PartnerList">
+        <ListBox HorizontalContentAlignment="Stretch" Grid.Row="1" x:Name="PartnerList" SelectionMode="Single" SelectionChanged="PartnerList_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+                            <TextBlock Text="{Binding PartTypes.typeName}" ></TextBlock>
+                            <TextBlock Text=" | "></TextBlock>
+                            <TextBlock Text="{Binding partName}"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 50 0">
+                            <TextBlock x:Name="Percent" Text="{Binding discount}"></TextBlock>
+                            <TextBlock Text="%"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="0">
+                            <TextBlock Text="{Binding director}" ></TextBlock>
+                            <TextBlock Text="{Binding phoneNum}"></TextBlock>
+                            <TextBlock Text="{Binding rating}"></TextBlock>
+                        </StackPanel>
+                    </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <Button x:Name="PartnerInfo" Click="PartnerInfo_Click" Content="Создать партнера" Grid.Row="2" HorizontalAlignment="Center"></Button>
     </Grid>
 </Page>
