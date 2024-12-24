@@ -39,14 +39,14 @@ namespace Master_floor
 
         private void PartnerInfo_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new PartnerInfoPage());
+            NavigationService.Navigate(new PartnerInfoPage(this));
         }
 
         private void PartnerList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if(PartnerList.SelectedItem != null)
             {
-                PartnerInfoPage partner = new PartnerInfoPage(PartnerList.SelectedItem as Partners);
+                PartnerInfoPage partner = new PartnerInfoPage(PartnerList.SelectedItem as Partners, this);
                 NavigationService.Navigate(partner);
                 PartnerList.SelectedItem = null;
             }

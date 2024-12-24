@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections.ObjectModel;
 
 namespace Master_floor
 {
@@ -20,10 +21,12 @@ namespace Master_floor
     {
         Partners partner;
         Entities Context;
-        public PartnerInfoPage()
+        PartnersPage page;
+        public PartnerInfoPage(PartnersPage page)
         {
             Context = new Entities();
             InitializeComponent();
+            this.page = page;
             Save.Visibility = Visibility.Collapsed;
             Delete.Visibility = Visibility.Collapsed;
             History.Visibility = Visibility.Collapsed;
@@ -32,12 +35,13 @@ namespace Master_floor
             PartType.SelectedValuePath = "id";
         }
 
-        public PartnerInfoPage(Partners importPartner)
+        public PartnerInfoPage(Partners importPartner, PartnersPage page)
         {
             Context = new Entities();
             //Context.PartTypes.Where(p => p.id == 1).FirstOrDefault().typeName = "ЗАО";
             //Context.SaveChanges();
             InitializeComponent();
+            this.page = page;
             Create.Visibility = Visibility.Collapsed;
             partner = Context.Partners.ToList().Find(p => p.id == importPartner.id);
             this.DataContext = partner;
@@ -71,7 +75,9 @@ namespace Master_floor
 
                     };
                     Context.Partners.Add(newPartner);
+
                     Context.SaveChanges();
+                    page.PartnerList.ItemsSource = new ObservableCollection<Partners> (Context.Partners.ToList());
                     MessageBox.Show("Новый партнер добавлен в базу.", "Создание партнера завершено", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 catch 
@@ -123,6 +129,7 @@ namespace Master_floor
                         {
                             Context.Partners.Remove(partner);
                             Context.SaveChanges();
+                            page.PartnerList.ItemsSource = new ObservableCollection<Partners>(Context.Partners.ToList());
                             MessageBox.Show("Удаление завершено");
                         }
                         catch
